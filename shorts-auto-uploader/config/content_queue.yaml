@@ -1,0 +1,20 @@
+# Queue of shorts to generate + publish, in order.
+# Each item is rendered into a vertical video and posted once, then marked
+# done in state.json so it's never posted twice.
+#
+# id:        unique, stable identifier
+# title:     on-screen headline text
+# script:    narration text (converted to speech) and caption body
+# platforms: which accounts to publish to; omit to use the default PLATFORMS env var
+# hashtags:  appended to the caption/description
+
+items:
+  - id: "001"
+    title: "하루 5분, 이게 습관이 됩니다"
+    script: "오늘 할 일을 딱 하나만 정하고 5분만 시작해보세요. 시작이 절반입니다."
+    hashtags: ["motivation", "shorts", "self improvement"]
+
+  - id: "002"
+    title: "커피 한 잔의 여유"
+    script: "잠깐 멈춰서 커피 한 잔 마시는 시간, 그게 오늘의 리셋 버튼이에요."
+    hashtags: ["coffee", "shorts", "daily"]
